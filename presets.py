@@ -28,6 +28,29 @@ JURISDICTION_FEEDS: dict[str, dict[str, list[str]]] = {
             "https://taxfoundation.org/feed/",
         ],
     },
+    "AU": {
+        "Australia profession & tax": [
+            "https://ministers.treasury.gov.au/rss.xml",
+            "https://www.austaxpolicy.com/feed/",
+            "https://news.google.com/rss/search?q=ATO+tax+Australia+OR+accountants&hl=en-AU&gl=AU&ceid=AU:en",
+            "https://hnrss.org/newest?q=ATO+OR+%22Australian+Taxation+Office%22+OR+%22Payday+Super%22",
+        ],
+    },
+    "CA": {
+        "Canada profession & tax": [
+            "https://news.google.com/rss/search?q=CRA+tax+Canada+OR+CPA+Canada&hl=en-CA&gl=CA&ceid=CA:en",
+        ],
+    },
+    "DE": {
+        "Germany profession & tax": [
+            "https://news.google.com/rss/search?q=Bundesfinanzministerium+Steuern+OR+e-Rechnung&hl=de&gl=DE&ceid=DE:de",
+        ],
+    },
+    "SG": {
+        "Singapore profession & tax": [
+            "https://news.google.com/rss/search?q=IRAS+tax+Singapore&hl=en-SG&gl=SG&ceid=SG:en",
+        ],
+    },
     "EU": {
         "EU regulation & tax": [
             "https://www.esma.europa.eu/rss.xml",
@@ -50,6 +73,19 @@ JURISDICTION_FEEDS: dict[str, dict[str, list[str]]] = {
 }
 
 JURISDICTION_QUERIES: dict[str, list[str]] = {
+    "AU": [
+        "ATO ruling OR Australian tax change announcement OR Payday Super",
+        "Tax Practitioners Board TPB compliance OR Division 296 superannuation",
+    ],
+    "CA": [
+        "CRA guidance OR Canadian tax change announcement OR CPA Canada update",
+    ],
+    "DE": [
+        "Bundesfinanzministerium BMF Steuern OR E-Rechnung Pflicht Deutschland",
+    ],
+    "SG": [
+        "IRAS Singapore tax announcement OR ACRA compliance update",
+    ],
     "UK": ["HMRC OR Making Tax Digital OR UK tax change announcement"],
     "US": ["IRS guidance OR US tax law change announcement"],
     "EU": ["EU VAT OR ViDA OR e-invoicing directive OR EU tax regulation"],

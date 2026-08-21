@@ -97,7 +97,7 @@ out", the most common one).
 ## Customising
 
 - **Jurisdictions & topics** come from starter packs in [`presets.py`](presets.py)
-  (currently UK, US, EU, MT + eight topics). Anything not in a pack still
+  (currently UK, US, EU, MT, AU, CA, DE, SG + eight topics). Anything not in a pack still
   works — an unknown topic becomes a section plus a web search automatically.
 - **Power users** can override anything the presets produce — `CONTEXT`,
   `SECTIONS`, `SEARCH_QUERIES`, `FEEDS` — at the bottom of `config.py`.
